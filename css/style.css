@@ -74,7 +74,7 @@ header li a i{
 
 .hero img{
   width: 100%;
-  height: 1300px;
+  height: auto;
   object-fit: cover;
   object-position: left top;
 }
@@ -83,15 +83,66 @@ header li a i{
   padding: 80px 0;
 }
 
+.products ul{
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 .products li{
-  width: 50%;
+  width: calc((100% - 16px) / 2);
   outline: 5px black solid;
+
 }
 
 .products li img{
   width: 100%;
+  margin-top: 32px;
 }
 
 .products li h2{
   font-size: 16px;
+  margin-top: 8px;
+}
+
+.products li a{
+  display: block;
+}
+
+.products .more{
+  display: block;
+  width: 70%;
+  outline: 5px black solid;
+  line-height: 48px;
+  text-align: center;
+  margin: 32px auto 0 ;
+}
+
+/* footer */
+
+footer{
+  background-color: black;
+  color: aliceblue;
+  padding: 32px 0;
+
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer small{
+  font-size: 16px;
+}
+
+footer ul{
+  display: flex;
+  gap: 16px;
+}
+
+footer li i{
+  font-size: 32px;
 }
